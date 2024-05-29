@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+:root {
+  /* --background-color: #00001f; */
+  --background-color: #000015;
+
+  --anti-background-color: #dfdfff;
+  --title-color: #dfdfff;
+  --first-color: #dfdfff;
+
+  --text-color: #c7c7e7;
+  --second-color: #c7c7e7;
+
+  --fourth-color: #00aaff;
+  --focus-color: #00aaff;
+
+  --third-color: rgba(0, 0, 21, 0.7);
+  --trans-background-color: rgba(0, 0, 21, 0.7);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1500px;
+  background-color: var(--background-color);
+  position: relative;
+  margin: auto;
+}
+
+/* =======================================
+                  main
+======================================= */
+
+#main-container {
+  width: 100%;
+}
+
+/* =========================about */
+.about-section {
+  color: var(--fifth-color);
+}
+.cards {
+  /* background-color: var(--first-color); */
+  background-color: #00aaff;
+  padding: 0 5rem;
+}
+.cards > h2 {
+  text-align: center;
+  padding: 1rem 0;
+}
+.cards-container {
+  background-color: brown;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1rem;
+  /* height: 100%; */
+  position: relative;
+}
+.companies > p,
+.awards > p {
+  border-left: 3px solid var(--fifth-color);
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.companies > section,
+.awards > section {
+  background-color: aquamarine;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 1rem;
+  height: 100%;
+}
+.companies > section > div,
+.awards > section > div {
+  /* background-color: black; */
+
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  color: var(--first-color);
+  color: var(--background-color);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
+}
+.companies > section > div > img,
+.awards > section > div > img {
+  width: 5rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+.companies > section > div > p,
+.awards > section > div > p {
+  color: var(--second-color);
+  color: var(--background-color);
+}
+/* =========================story */
+.story {
+  height: auto;
+  padding: 0 5rem;
+  width: 82%;
+  margin: auto;
+  color: var(--second-color);
+}
+.intro-container {
+  /* background-color: rgb(255, 145, 0); */
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.story-image {
+  width: 30%;
+  height: 250px;
+}
+.story-image > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.story-text-content1 {
+  width: 70%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.story-text-content1 > h2 {
+  color: var(--first-color);
+}
+.read-more {
+  color: var(--fourth-color);
+  border-bottom: 1px solid var(--fourth-color);
+  /* width: fit-content; */
+}
+.read-more-container {
+  display: none;
+}
+/* ===================leaders */
+.leaders {
+  width: 80%;
+  margin: auto;
+  border-top: 1px solid var(--fourth-color);
+  margin-top: 2rem;
+}
+.leaders > h3 {
+  color: var(--first-color);
+  padding: 1rem;
+}
+.leaders-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: max-content;
+  gap: 1rem;
+}
+.leaders-cards-container > article {
+  border-radius: 10px;
+  padding: 1rem;
+  height: auto;
+}
+.leaders-cards-container > article > div {
+  width: 100%;
+}
+
+.leaders-cards-container > article > div > img {
+  width: 100%;
+  height: 14rem;
+  border-radius: 10px;
+}
+.leaders-cards-container > article > h4 {
+  color: var(--fourth-color);
+}
+.leaders-comments {
+  color: var(--first-color);
+}
+.name-title,
+.leaders-cards-container > article > ul > li {
+  color: var(--fourth-color);
+}
+.leaders-cards-container > article > ul {
+  list-style: none;
+}
+/* =================products */
+.products {
+  background-color: var(--first-color);
+}
+.products > h2 {
+  padding: 1rem;
+  text-align: center;
+  color: var(--background-color);
+}
+.main-products {
+  width: 90%;
+  margin: auto;
+  color: var(--background-color);
+}
+.main-products > h3 {
+  padding: 1rem 0;
+  color: var(--background-color);
+}
+.hard-parts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.hard-parts > article {
+  display: flex;
+  gap: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+.hard-parts > article > section > ul {
+  list-style: none;
+  color: var(--third-color);
+}
+.hard-parts > article > section {
+  color: var(--background-color);
+}
+.product-image-container {
+  width: 30%;
+}
+.product-image-container > img {
+  width: 100%;
+  height: 7rem;
+}
+.price-container {
+  margin: 0.5rem 0;
+  display: flex;
+  gap: 0.5rem;
+  /* box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.8);  */
+  padding: 0.5rem 0;
+  align-items: center;
+}
+.add,
+.remove {
+  text-align: center;
+  font-size: 1rem;
+  width: 2rem;
+  border-radius: 5px;
+  color: var(--background-color);
+}
+.buy-btn {
+  text-align: center;
+  font-size: 1rem;
+  width: 3rem;
+  border-radius: 5px;
+  background-color: var(--fourth-color);
+  color: var(--background-color);
+}
+.offer-span {
+  color: red;
+  text-decoration: line-through;
+}
+/* ===============services and review */
+.soft-services,
+.review-container {
+  width: 90%;
+  margin: auto;
+}
+.soft-services > h3,
+.review-container > h3 {
+  padding: 1rem 0;
+  color: var(--background-color);
+}
+.soft-services > .review-container > p {
+  color: var(--third-color);
+}
+/* =========================REVIEW CARDS */
+.review-cards {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+/* ====================visit us containers */
+.visit-container {
+  background-color: var(--background-color);
+  color: white;
+}
+.visit-container > h2 {
+  color: var(--first-color);
+  text-align: center;
+  padding: 1rem;
+}
+.visit-content {
+  display: flex;
+}
+.visit-area-content {
+  background-color: blueviolet;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.visit-area-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: blue;
+  width: 50%;
+}

@@ -1,0 +1,156 @@
+/* =========================hero */
+.hero-section {
+  min-height: 100vh;
+  /* background: blue; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-text-content {
+  /* background-color: blueviolet; */
+  /* clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%); */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.hero-text-content > h1 {
+  color: var(--first-color);
+  text-align: center;
+  font-size: 2rem;
+}
+.hero-text-content > p {
+  color: var(--second-color);
+  text-align: center;
+  width: 70%;
+}
+
+.hero-text-content > a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--fourth-color);
+  border-bottom: 1px solid var(--fourth-color);
+}
+
+.hero-svg-container {
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.first-svg {
+  --i: 0;
+}
+.second-svg {
+  --i: 1;
+}
+.third-svg {
+  --i: 2;
+}
+.fourth-svg {
+  --i: 3;
+}
+.fifth-svg {
+  --i: 4;
+}
+.sixth-svg {
+  --i: 5;
+}
+.svg-frame {
+  /* background-color: aqua; */
+
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: change-view 2s ease-in infinite;
+  z-index: -1;
+}
+
+@keyframes change-view {
+  0%,
+  50% {
+    transform: rotate(-0deg) skew(00deg) translateX(calc(0 * var(--i)))
+      translateY(calc(-0px * var(--i)));
+  }
+
+  70%,
+  100% {
+    transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i)))
+      translateY(calc(-35px * var(--i)));
+  }
+}
+
+svg {
+  position: absolute;
+  transition: 0.5s;
+  transform-origin: center;
+  width: 450px;
+  height: 450px;
+  fill: none;
+  animation: change-view 5s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 12px #00aaff);
+}
+
+#big-centro,
+#outter1,
+#solo-lines,
+#center,
+#outter-center,
+#bottom-dots,
+#center-lines,
+#squares,
+#top-dots {
+  transform-origin: center;
+  animation: rotate 4s ease-in-out infinite alternate;
+}
+
+#big-centro {
+  animation-delay: -1.5s;
+}
+
+#outter1 {
+  animation-delay: -1.2s;
+}
+
+#center {
+  animation-delay: -2.2s;
+}
+
+#bottom-dots,
+#top-dots {
+  animation-duration: 7s;
+}
+
+#center-lines,
+#outter-center {
+  animation-duration: 6s;
+  animation-delay: -3s;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 800px) {
+  .hero-section {
+    min-height: 100vh;
+    /* background: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-svg-container {
+    border-radius: 50%;
+  }
+}
