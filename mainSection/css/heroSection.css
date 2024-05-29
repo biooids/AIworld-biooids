@@ -1,4 +1,17 @@
-/* =========================hero */
+:root {
+  /* --background-color: #00001f; */
+  --background-color: #000015;
+
+  --anti-background-color: #dfdfff;
+  --title-color: #dfdfff;
+
+  --text-color: #c7c7e7;
+
+  --focus-color: #00aaff;
+
+  --trans-background-color: rgba(0, 0, 21, 0.7);
+}
+
 .hero-section {
   min-height: 100vh;
   /* background: blue; */
@@ -17,12 +30,12 @@
   gap: 1rem;
 }
 .hero-text-content > h1 {
-  color: var(--first-color);
+  color: var(--anti-background-color);
   text-align: center;
   font-size: 2rem;
 }
 .hero-text-content > p {
-  color: var(--second-color);
+  color: var(--text-color);
   text-align: center;
   width: 70%;
 }
@@ -30,8 +43,8 @@
 .hero-text-content > a {
   text-decoration: none;
   font-weight: 700;
-  color: var(--fourth-color);
-  border-bottom: 1px solid var(--fourth-color);
+  color: var(--focus-color);
+  border-bottom: 1px solid var(--focus-color);
 }
 
 .hero-svg-container {

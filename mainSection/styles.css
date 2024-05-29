@@ -44,24 +44,24 @@ body {
 }
 
 /* =========================about */
-.about-section {
-  color: var(--fifth-color);
-}
+/* .about-section {
+
+} */
 .cards {
-  /* background-color: var(--first-color); */
-  background-color: #00aaff;
+  background-color: var(--first-color);
+  /* background-color: #00aaff; */
   padding: 0 5rem;
 }
 .cards > h2 {
   text-align: center;
   padding: 1rem 0;
 }
-.cards-container {
-  background-color: brown;
+.cards-container1,
+.cards-container2 {
+  /* background-color: brown; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  /* height: 100%; */
   position: relative;
 }
 .companies > p,
@@ -72,11 +72,10 @@ body {
 }
 .companies > section,
 .awards > section {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   grid-template-columns: 1fr 1fr;
   display: grid;
   gap: 1rem;
-  height: 100%;
 }
 .companies > section > div,
 .awards > section > div {
@@ -86,7 +85,6 @@ body {
   text-align: center;
   border-radius: 5px;
   color: var(--first-color);
-  color: var(--background-color);
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
 }
 .companies > section > div > img,
@@ -98,7 +96,6 @@ body {
 .companies > section > div > p,
 .awards > section > div > p {
   color: var(--second-color);
-  color: var(--background-color);
 }
 /* =========================story */
 .story {
