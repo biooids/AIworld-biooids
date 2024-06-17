@@ -24,7 +24,7 @@
 }
 .contact-section {
   background-color: var(--anti-background-color);
-  padding: 0 5rem;
+  padding: 5rem 0;
 }
 .contact-section h1,
 .contact-section h2,
@@ -43,17 +43,12 @@
 }
 
 .contact-section .container {
-  max-width: 1120px;
   margin-inline: 1.5rem;
 }
 
 .contact-section .grid {
   display: grid;
   gap: 1.5rem;
-}
-
-.contact-section .section {
-  padding-block: 4rem 2rem;
 }
 
 .section__title-1,
@@ -319,6 +314,8 @@
   font-size: 1.25rem;
   display: grid;
   place-items: center;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   transition: background-color 0.3s;
 }
@@ -350,7 +347,6 @@
 @media screen and (min-width: 576px) {
   .contact__data {
     width: 350px;
-    padding: 4rem 1.5rem;
     margin-inline: auto;
   }
   .contact__container {
@@ -379,9 +375,7 @@
   .container {
     margin-inline: auto;
   }
-  .section {
-    padding-block: 7rem 2rem;
-  }
+
   .section__title-1::after,
   .section__title-2::after {
     width: 70px;
@@ -395,7 +389,6 @@
   .contact__mail {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
-    padding: 7rem 5.5rem 7.5rem;
     margin-top: 0;
   }
   .contact__title {
@@ -428,7 +421,6 @@
     text-align: initial;
   }
   .contact__social-data {
-    flex-direction: row;
     align-items: center;
     column-gap: 1.25rem;
   }

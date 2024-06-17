@@ -131,7 +131,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-size: 0.7rem;
 }
 .story-text-content > h2 {
   color: var(--anti-background-color);
@@ -165,7 +164,7 @@ body {
 .footer-section {
   background: var(--background-color);
   position: relative;
-  padding: 2rem 5rem;
+  padding: 3rem;
 }
 .footer-cta {
   border-bottom: 1px solid var(--trans-anti-background-color);
@@ -285,13 +284,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-.subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #2e2e2e;
-  border: 1px solid #2e2e2e;
-  color: #fff;
-}
+
 .subscribe-form button {
   position: absolute;
   right: 0;
@@ -307,7 +300,6 @@ body {
 }
 .copyright-area {
   background: var(--trans-anti-background-color);
-  padding: 25px 0;
   padding: 1rem;
   border-radius: 10px;
 }
