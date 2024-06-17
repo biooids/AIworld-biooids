@@ -12,8 +12,9 @@
 }
 
 .services-section {
-  padding: 0 5rem;
+  /* padding: 0 5rem; */
   margin-top: 1rem;
+  /* background-color: #00aaff; */
 }
 
 .services-container {
@@ -132,8 +133,9 @@
   aspect-ratio: 1/1;
   overflow: hidden;
   border-radius: 100%;
-  z-index: 1;
+  z-index: -1;
   cursor: pointer;
+  background-color: #00aaff;
 }
 .col-active .image-cover {
   position: relative;

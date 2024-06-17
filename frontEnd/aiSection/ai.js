@@ -91,14 +91,11 @@ const handleMouseMove = (e) => {
   clearTimeout(mouseTimeout);
   clearInterval(fadeInterval);
   letters.style.opacity = "0.4";
-  // letters.style.height = `calc(${container.style.height} + ${}`;
-  // letters.style.height = `${Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight)}px`;
 
   // get mouse position
   const bounds = container.getBoundingClientRect();
   const x = e.clientX - bounds.left;
   const y = e.clientY - bounds.top - document.body.offsetHeight;
-  // console.log(`${e.clientX}, ${e.clientY}`);
 
   // generate new random string of characters
   const fontSize = Number(

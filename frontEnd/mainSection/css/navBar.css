@@ -148,7 +148,7 @@ nav ul ul li:nth-child(3) {
 }
 
 .slide-down {
-  display: block !important;
+  display: block;
 }
 .slide-down:hover {
   border-bottom: 1px solid var(--trans-anti-background-color);
