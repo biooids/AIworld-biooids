@@ -281,6 +281,7 @@
 .contact__social-arrow {
   width: 32px;
   margin: 0 auto;
+  border-radius: 50%;
 }
 
 .contact__social-data {
@@ -360,9 +361,7 @@
   .contact__social {
     background-color: transparent;
   }
-  .contact__social-arrow {
-    filter: invert(1);
-  }
+
   .contact__social-description-1 {
     color: var(--text-color);
   }
